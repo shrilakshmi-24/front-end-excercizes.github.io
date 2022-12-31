@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Movies</title>
+</head>
+<body>
+    <table>
+        <td>
+            <select>
+                <option value="IMDB">IMDB</option>
+                <option value="Tomatoes">Tomatoes</option>
+                <option value="CombinedRating">CombinedRating</option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">descending</option>
+            </select>
+        </td>
+        <td>
+            <button class="sort-now">SortNow</button>
+        </td>
+    </table>
+    <table>
+        <tr>
+            <th>Sl.no</th>
+            <th>TITLE</th>
+            <th>IMDB</th>
+            <th>Tomatoes</th>
+            <th>Rating</th>
+            <th>View</th>
+            
+        </tr>
+        <tbody id="table-data"></tbody>
+    </table>
+    <table id="data"></table>
+    
+    <table class="button">
+        <tr>
+            <td id="slno"></td>
+            <td ><button onclick="prevPage()" id="prev">Previous <i class="fa fa-arrow-LEFT" aria-hidden="true"></i></button></td>
+            <td ><button onclick="nextPage()" id="next">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button></td>
+           </tr>
+    </table>
+    
+
+    </div>
+    <div id="pagination-wrapper"></div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

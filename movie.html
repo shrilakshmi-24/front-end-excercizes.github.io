@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>laast Name</th>
+        </tr>
+        <tbody id="my-table">
+
+        </tbody>
+    </table>
+    <script>
+    
+           var employees=[
+                {"firstName":"John", "lastName":"Doe"},
+                {"firstName":"Anna", "lastName":"Smith"},
+                {"firstName":"Peter", "lastName":"Jones"}
+            ]
+            function build(employees){
+            var i;
+            table=document.getElementById('my-table')
+            for(i=0;i<employees.length;i++){
+                var row=`<tr>
+                    <td>${employees[i].firstName}</td>
+                    <td>${employees[i].lastName}</td>
+                    
+                </tr>`
+                table.innerHTML+=row
+            }
+        }
+            build(employees)
+            
+    </script>
+</body>
+</html>
